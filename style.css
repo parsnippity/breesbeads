@@ -6,18 +6,23 @@ body {
 
 header {
     background-color: rgb(255, 192, 203);
+    width: 100%;
 }
 
 nav {
     background-color: rgb(255, 155, 170);
-    padding: 5px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-a {
+nav > a {
+    padding: 5px;
     color: black;
     font-size: 20px;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -36,6 +41,7 @@ h1 {
 
 #logo {
     max-height: 50px;
+    max-width: 100%;
 }
 
 #homeImage {

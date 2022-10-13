@@ -26,8 +26,10 @@
     <article>
         <div>
             <h1>Order a product:</h1>
+        </div>
             <form>
-                <fieldset>
+                <fieldset id="info">
+                    <legend for="info">Personal information for shipping:</legend>
                     <label for="name">Name:</label>
                     <input type="text" id="name">
                     <br>
@@ -45,8 +47,34 @@
                     <br>
                     <textarea id="special"></textarea>
                 </fieldset>
+                <fieldset id="products" onchange="custom()">
+                    <legend for="products">Choose a product:</legend>
+                    <ul>
+                        <li><input type="radio" id="one" name="product"><label for="one">One</label></li>
+                        <li><input type="radio" id="two" name="product"><label for="two">Two</label></li>
+                        <li><input type="radio" id="three" name="product"><label for="three">Three</label></li>
+                        <li><input type="radio" id="four" name="product"><label for="four">Four</label></li>
+                        <li><input type="radio" id="five" name="product"><label for="five">Five</label></li>
+                        <li><input type="radio" id="six" name="product"><label for="six">Six</label></li>
+                        <li><input type="radio" id="customNecklace" name="product"><label for="customNecklace">Custom necklace</label></li>
+                        <li><input type="radio" id="customBracelet" name="product"><label for="customBracelet">Custom bracelet</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset id="customColor" disabled>
+                    <legend for="customColor">Choose your colors for custom:</legend>
+                    <ul>
+                        <li><input type="checkbox" id="red"><label for="red">Red</label></li>
+                        <li><input type="checkbox" id="orange"><label for="orange">Orange</label></li>
+                        <li><input type="checkbox" id="yellow"><label for="yellow">Yellow</label></li>
+                        <li><input type="checkbox" id="green"><label for="green">Green</label></li>
+                        <li><input type="checkbox" id="blue"><label for="blue">Red</label></li>
+                        <li><input type="checkbox" id="purple"><label for="purple">Purple</label></li>
+                        <li><input type="checkbox" id="pink"><label for="pink">Pink</label></li>
+                        <li><input type="checkbox" id="white"><label for="white">White</label></li>
+                        <li><input type="checkbox" id="black"><label for="black">Black</label></li>
+                    </ul>
+                </fieldset>
             </form>
-        </div>
     </article>
     <footer>
         <img id="footerLogo" src="images/smallerlogo.png">
