@@ -1,0 +1,79 @@
+body {
+    background-color: #f0ffff;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-color: rgb(255, 192, 203);
+}
+
+nav {
+    background-color: rgb(255, 155, 170);
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "footerLogo address contact twitter instagram ." "date . . . . .";
+    padding: 5px;
+}
+
+h1 {
+    font-family: url("./Lobster/Lobster-Regular.ttf"), cursive;
+}
+
+#logo {
+    max-height: 50px;
+}
+
+#homeImage {
+    background-image: url("images/homelayout.png");
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homeLogo {
+    max-height: 100px;
+}
+
+#footerLogo {
+    grid-area: footerLogo;
+}
+
+#date {
+    grid-area: date;
+}
+
+#address {
+    grid-area: address;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+#twitter {
+    grid-area: twitter;
+}
+
+#instagram {
+    grid-area: instagram;
+}
+
+#footerLogo {
+    max-height: 100px;
+}
