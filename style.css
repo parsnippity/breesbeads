@@ -6,7 +6,6 @@ body {
 
 header {
     background-color: rgb(255, 192, 203);
-    width: 100%;
 }
 
 nav {
@@ -17,7 +16,7 @@ nav {
 }
 
 nav > a {
-    padding: 5px;
+    margin: 5px;
     color: black;
     font-size: 20px;
 }
@@ -54,10 +53,12 @@ h1 {
 
 #homeLogo {
     max-height: 100px;
+    max-width: 100%;
 }
 
 #footerLogo {
     grid-area: footerLogo;
+    max-height: 50px;
 }
 
 #date {
@@ -78,8 +79,4 @@ h1 {
 
 #instagram {
     grid-area: instagram;
-}
-
-#footerLogo {
-    max-height: 100px;
 }
