@@ -56,6 +56,103 @@ h1 {
     max-width: 100%;
 }
 
+#videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    max-width: 100%;
+    grid-template-areas: "videoOne videoTwo";
+}
+
+#videoOne {
+    grid-area: videoOne;
+    width: 560px;
+    height: 315px;
+}
+
+#videoTwo {
+    grid-area: videoTwo;
+    width: 560px;
+    height: 315px;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "productOne productTwo productThree productFour" "productFive productSix productSeven productEight";
+    max-width: 100%;
+    gap: 10px;
+    margin: 10px;
+}
+
+#productOne {
+    grid-area: productOne;
+}
+
+#productTwo {
+    grid-area: productTwo;
+}
+
+#productThree {
+    grid-area: productThree;
+}
+
+#productFour {
+    grid-area: productFour;
+}
+
+#productFive {
+    grid-area: productFive;
+}
+
+#productSix {
+    grid-area: productSix;
+}
+
+#productSeven {
+    grid-area: productSeven;
+}
+
+#productEight {
+    grid-area: productEight;
+}
+
+#productOne > img, #productOne > p {
+    max-width: 100%;
+}
+
+#productTwo > img, #productTwo > p {
+    max-width: 100%;
+}
+
+#productThree > img, #productThree > p {
+    max-width: 100%;
+}
+
+#productFour > img, #productFour > p {
+    max-width: 100%;
+}
+
+#productFive > img, #productFive > p {
+    max-width: 100%;
+}
+
+#productSix > img, #productSix > p {
+    max-width: 100%;
+}
+
+#productSeven > img, #productSeven > p {
+    max-width: 100%;
+}
+
+#productEight > img, #productEight > p {
+    max-width: 100%;
+}
+
+.label {
+    display: inline;
+}
+
 #footerLogo {
     grid-area: footerLogo;
     max-height: 50px;
@@ -79,4 +176,71 @@ h1 {
 
 #instagram {
     grid-area: instagram;
+}
+
+@media only screen and (max-width: 1120px) {
+    #videos {
+        justify-items: stretch;
+    }
+
+    #videoOne {
+        width: 100%;
+        min-height: 315px;
+    }
+    
+    #videoTwo {
+        width: 100%;
+        min-height: 315px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #products {
+            display: flex;
+            max-width: 100%;
+            gap: 5px;
+            margin: 5px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    
+        #productOne {
+            grid-area: productOne;
+            max-width: 49%;
+        }
+    
+        #productTwo {
+            grid-area: productTwo;
+            max-width: 49%;
+        }
+    
+        #productThree {
+            grid-area: productThree;
+            max-width: 49%;
+        }
+    
+        #productFour {
+            grid-area: productFour;
+            max-width: 49%;
+        }
+    
+        #productFive {
+            grid-area: productFive;
+            max-width: 49%;
+        }
+    
+        #productSix {
+            grid-area: productSix;
+            max-width: 49%;
+        }
+    
+        #productSeven {
+            grid-area: productSeven;
+            max-width: 49%;
+        }
+    
+        #productEight {
+            grid-area: productEight;
+            max-width: 49%;
+        }
 }
