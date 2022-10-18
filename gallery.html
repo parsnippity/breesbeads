@@ -15,64 +15,77 @@
 </head>
 <body>
     <header>
-        <a href="./index.html"><img id="logo" src="images/logo.png"></a>
+        <div id="logoSearch">
+            <a href="./index.html"><img id="logo" src="images/logo.png"></a>
+            <input id="forSearch" type="search" placeholder="Search">
+        </div>
         <nav>
             <a href="./index.html">Home</a>
             <a href="./gallery.html">Gallery</a>
             <a href="./reviews.html">Reviews</a>
             <a href="./order.html">Order</a>
+            <a href="./credits.html">Credits</a>
         </nav>
     </header>
     <article>
-        <div id="videos">
-            <iframe id="videoOne" src="https://www.youtube.com/embed/kt2SEqHic2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe id="videoTwo" src="https://www.youtube.com/embed/QLItBdEJuqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
         <div class="top">
             <h1>Our products:</h1>
         </div>
-        <div id="products">
-            <div id="productOne">
+        <div id="jewelry">
+            <div id="productOne" class="gallery">
                 <img src="./images/blueandblacknecklace.jpg">
                 <br>
-                <p class="label">Blue and Black Necklace: $10</p>
+                <p class="label">Blue and Black Necklace: $15</p>
             </div>
-            <div id="productTwo">
+            <div id="productTwo" class="gallery">
+                <img src="./images/heartbeads.jpg">
+                <br>
+                <p class="label">Heart Bead Necklace: $15</p>
+            </div>
+            <div id="productThree" class="gallery">
+                <img src="./images/pearlandbeadsnecklace.jpg">
+                <br>
+                <p class="label">Pearl and Beads Necklace: $15</p>
+            </div>
+            <div id="productFour" class="gallery">
+                <img src="./images/customnecklace.jpg">
+                <br>
+                <p class="label">Custom Necklace: $20</p>
+            </div>
+            <div id="productFive" class="gallery">
                 <img src="./images/flowerbeads.jpg">
                 <br>
                 <p class="label">Flower Bead Bracelet: $10</p>
             </div>
-            <div id="productThree">
-                <img src="./images/heartbeads.jpg">
-                <br>
-                <p class="label">Heart Bead Necklace: $10</p>
-            </div>
-            <div id="productFour">
-                <img src="./images/pearlandbeadsnecklace.jpg">
-                <br>
-                <p class="label">Pearl and Beads Necklace: $10</p>
-            </div>
-            <div id="productFive">
+            <div id="productSix" class="gallery">
                 <img src="./images/tropicalbeads.jpg">
                 <br>
                 <p class="label">Tropical Bead Bracelet: $10</p>
             </div>
-            <div id="productSix">
+            <div id="productSeven" class="gallery">
                 <img src="./images/turquoisebeads.jpg">
                 <br>
                 <p class="label">Turquoise Bead Bracelet: $10</p>
             </div>
-            <div id="productSeven">
+            <div id="productEight" class="gallery">
                 <img src="./images/custombracelet.jpg">
                 <br>
-                <p class="label">Custom Bracelet: $10</p>
-            </div>
-            <div id="productEight">
-                <img src="./images/customnecklace.jpg">
-                <br>
-                <p class="label">Custom Necklace: $10</p>
+                <p class="label">Custom Bracelet: $15</p>
             </div>
         </div>
+        <hr>
+        <div class="top">
+            <h1>Tutorial Videos:</h1>
+        </div>
+        <div id="videos">
+            <iframe id="videoOne" src="https://www.youtube.com/embed/kt2SEqHic2Q" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe id="videoTwo" src="https://www.youtube.com/embed/QLItBdEJuqk" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <br>
     </article>
     <footer>
         <img id="footerLogo" src="images/smallerlogo.png">

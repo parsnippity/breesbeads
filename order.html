@@ -15,12 +15,16 @@
 </head>
 <body>
     <header>
-        <a href="./index.html"><img id="logo" src="images/logo.png"></a>
+        <div id="logoSearch">
+            <a href="./index.html"><img id="logo" src="images/logo.png"></a>
+            <input id="forSearch" type="search" placeholder="Search">
+        </div>
         <nav>
             <a href="./index.html">Home</a>
             <a href="./gallery.html">Gallery</a>
             <a href="./reviews.html">Reviews</a>
             <a href="./order.html">Order</a>
+            <a href="./credits.html">Credits</a>
         </nav>
     </header>
     <article>
@@ -31,7 +35,7 @@
                 <fieldset id="info">
                     <legend for="info">Personal information for shipping:</legend>
                     <label for="name">Name:</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" required>
                     <br>
                     <label for="email">Email:</label>
                     <input type="email" id="email">
@@ -41,25 +45,26 @@
                     <br>
                     <label for="address">Address:</label>
                     <br>
-                    <textarea id="address"></textarea>
+                    <textarea id="address" required></textarea>
                 </fieldset>
                 <fieldset id="products" onchange="custom()">
                     <legend for="products">Choose a product:</legend>
                     <ul>
-                        <li><input type="radio" id="one" name="product"><label for="one">One</label></li>
-                        <li><input type="radio" id="two" name="product"><label for="two">Two</label></li>
-                        <li><input type="radio" id="three" name="product"><label for="three">Three</label></li>
-                        <li><input type="radio" id="four" name="product"><label for="four">Four</label></li>
-                        <li><input type="radio" id="five" name="product"><label for="five">Five</label></li>
-                        <li><input type="radio" id="six" name="product"><label for="six">Six</label></li>
-                        <li><input type="radio" id="customNecklace" name="product"><label for="customNecklace">Custom necklace</label></li>
-                        <li><input type="radio" id="customBracelet" name="product"><label for="customBracelet">Custom bracelet</label></li>
+                        <li><input type="radio" id="one" name="product" required><label for="one">Blue and Black Necklace</label></li>
+                        <li><input type="radio" id="two" name="product" required><label for="two">Heart Bead Necklace</label></li>
+                        <li><input type="radio" id="three" name="product" required><label for="three">Pearl and Beads Necklace</label></li>
+                        <li><input type="radio" id="customNecklace" name="product" required><label for="customNecklace">Custom Necklace</label>
+                        </li>
+                        <li><input type="radio" id="four" name="product" required><label for="four">Flower Bead Bracelet</label></li>
+                        <li><input type="radio" id="five" name="product" required><label for="five">Tropical Bead Bracelet</label></li>
+                        <li><input type="radio" id="six" name="product" required><label for="six">Turquoise Bead Bracelet</label></li>
+                        <li><input type="radio" id="customBracelet" name="product" required><label for="customBracelet">Custom Bracelet</label></li>
                     </ul>
                 </fieldset>
                 <fieldset id="customColor" disabled>
                     <legend for="customColor">Choose your colors for custom:</legend>
                     <ul>
-                        <li><input type="checkbox" id="red"><label for="red">Red</label></li>
+                        <li><input type="checkbox" id="red" class="color"><label for="red">Red</label></li>
                         <li><input type="checkbox" id="orange"><label for="orange">Orange</label></li>
                         <li><input type="checkbox" id="yellow"><label for="yellow">Yellow</label></li>
                         <li><input type="checkbox" id="green"><label for="green">Green</label></li>
@@ -71,11 +76,12 @@
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <label for="special">Special Instructions / Requests:</label>
+                    <legend>Special Instructions / Requests:</legend>
+                    <label for="special">If you are purchasing custom jewelry, please tell me here what pattern you want:</label>
                     <br>
                     <textarea id="special"></textarea>
-                    <br>
-                    <button type="submit">Submit</button>
+                    <p><strong>If you do not tell me colors and a pattern for custom, I will choose them for you.</strong></p>
+                    <a href="./thankyou.html"><button>Submit</button></a>
                 </fieldset>
             </form>
     </article>
