@@ -134,6 +134,11 @@ nav > a {
     margin: 10px;
 }
 
+/*removes the no reviews message from view*/
+#none {
+	display: none;
+}
+
 /*the following set the grid-area for the various product images*/
 #productOne {
     grid-area: productOne;
