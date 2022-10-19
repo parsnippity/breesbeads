@@ -29,7 +29,7 @@
     </header>
     <article>
         <div class="top">
-            <h1>Order a product:</h1>
+            <h1>Order a Product:</h1>
         </div>
             <form>
                 <fieldset id="info">
@@ -45,7 +45,7 @@
                     <br>
                     <label for="address">Address:</label>
                     <br>
-                    <textarea id="address" required></textarea>
+                    <textarea id="address" rows="3" cols="25" required></textarea>
                 </fieldset>
                 <fieldset id="products" onchange="custom()">
                     <legend for="products">Choose a product:</legend>
@@ -65,33 +65,34 @@
                     <legend for="customColor">Choose your colors for custom:</legend>
                     <ul>
                         <li><input type="checkbox" id="red" class="color"><label for="red">Red</label></li>
-                        <li><input type="checkbox" id="orange"><label for="orange">Orange</label></li>
-                        <li><input type="checkbox" id="yellow"><label for="yellow">Yellow</label></li>
-                        <li><input type="checkbox" id="green"><label for="green">Green</label></li>
-                        <li><input type="checkbox" id="blue"><label for="blue">Red</label></li>
-                        <li><input type="checkbox" id="purple"><label for="purple">Purple</label></li>
-                        <li><input type="checkbox" id="pink"><label for="pink">Pink</label></li>
-                        <li><input type="checkbox" id="white"><label for="white">White</label></li>
-                        <li><input type="checkbox" id="black"><label for="black">Black</label></li>
+                        <li><input type="checkbox" id="orange" class="color"><label for="orange">Orange</label></li>
+                        <li><input type="checkbox" id="yellow" class="color"><label for="yellow">Yellow</label></li>
+                        <li><input type="checkbox" id="green" class="color"><label for="green">Green</label></li>
+                        <li><input type="checkbox" id="blue" class="color"><label for="blue">Red</label></li>
+                        <li><input type="checkbox" id="purple" class="color"><label for="purple">Purple</label></li>
+                        <li><input type="checkbox" id="pink" class="color"><label for="pink">Pink</label></li>
+                        <li><input type="checkbox" id="white" class="color"><label for="white">White</label></li>
+                        <li><input type="checkbox" id="black" class="color"><label for="black">Black</label></li>
                     </ul>
                 </fieldset>
                 <fieldset>
                     <legend>Special Instructions / Requests:</legend>
                     <label for="special">If you are purchasing custom jewelry, please tell me here what pattern you want:</label>
                     <br>
-                    <textarea id="special"></textarea>
+                    <textarea id="special" rows="3" cols="25"></textarea>
                     <p><strong>If you do not tell me colors and a pattern for custom, I will choose them for you.</strong></p>
-                    <a href="./thankyou.html"><button>Submit</button></a>
+                    <button type="submit" formaction="./index.html">Submit</button>
                 </fieldset>
             </form>
     </article>
     <footer>
         <img id="footerLogo" src="images/smallerlogo.png">
-        <p id="date">last edited ?/?/2022</p>
-        <p id="address">address</p>
-        <p id="contact">contact info</p>
-        <p id="twitter">twitter</p>
-        <p id="instagram">instagram</p>
+        <p id="address">1018 W Beaded Ln<br>Glendale AZ 85310</p>
+        <p id="contact">Email: <a href="mailto:contactus@breesbeads.com">contactus@breesbeads.com</a><br>Phone Number: 123
+            456 7890</p>
+        <p id="date">Last Edited 10/18/2022</p>
+        <a href="https://www.twitter.com"><img id="twitter" src="./images/twitter.png"></a>
+        <a href="https://www.instagram.com"><img id="instagram" src="./images/instagram.png"></a>
     </footer>
     <script src="./index.js"></script>
 </body>

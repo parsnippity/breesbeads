@@ -28,14 +28,54 @@
         </nav>
     </header>
     <article>
+        <div class="top">
+            <h1>Leave a Review:</h1>
+        </div>
+        <form>
+                <fieldset id="stuff">
+                    <legend for="stuff">Information for validating your review:</legend>
+                    <label for="nameReview">Name:</label>
+                    <input type="text" id="nameReview" required>
+                    <br>
+                    <label for="emailReview">Email:</label>
+                    <input type="email" id="emailReview">
+                    <br>
+                    <label for="phoneNumReview">Phone Number:</label>
+                    <input type="tel" id="phoneNumReview">
+                    <br>
+                    <label for="reviewOrderNumber">Order Number:</label>
+                    <input id="reviewOrderNumber" type="number" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Product and Review:</legend>
+                    <label for="purchasedProduct">Product:</label>
+                    <select id="purchasedProduct">
+                        <option value="bb">Blue and Black Necklace</option>
+                        <option value="hb">Heart Bead Necklace</option>
+                        <option value="pb">Pearl and Beads Necklace</option>
+                        <option value="cn">Custom Necklace</option>
+                        <option value="fb">Flower Bead Bracelet</option>
+                        <option value="tropb">Tropical Bead Bracelet</option>
+                        <option value="tb">Turquoise Bead Bracelet</option>
+                        <option value="cb">Custom Bracelet</option>
+                    </select>
+                    <br>
+                    <label for="reviewSpace">Review:</label>
+                    <br>
+                    <textarea id="reviewSpace" rows="4" cols="35" required></textarea>
+                    <br>
+                    <button type="submit" formaction="./reviews.html">Submit</button>
+                </fieldset>
+        </form>
     </article>
     <footer>
         <img id="footerLogo" src="images/smallerlogo.png">
-        <p id="date">last edited ?/?/2022</p>
-        <p id="address">address</p>
-        <p id="contact">contact info</p>
-        <p id="twitter">twitter</p>
-        <p id="instagram">instagram</p>
+        <p id="address">1018 W Beaded Ln<br>Glendale AZ 85310</p>
+        <p id="contact">Email: <a href="mailto:contactus@breesbeads.com">contactus@breesbeads.com</a><br>Phone Number: 123
+            456 7890</p>
+        <p id="date">Last Edited 10/18/2022</p>
+        <a href="https://www.twitter.com"><img id="twitter" src="./images/twitter.png"></a>
+        <a href="https://www.instagram.com"><img id="instagram" src="./images/instagram.png"></a>
     </footer>
     <script src="./index.js"></script>
 </body>
