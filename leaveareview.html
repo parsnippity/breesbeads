@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Brianne Siemsen">
-    <meta name="description" content="Empty page with all the meta tags complete">
-    <title>Document</title>
-    <meta property="og:image" content="https://d32qe1r3a676y7.cloudfront.net/eyJidWNrZXQiOiJibG9nLWVjb3RyZWUiLCJrZXkiOiAiYmxvZy8wMDAxLzAxL2FkNDZkYmI0NDdjZDBlOWE2YWVlY2Q2NGNjMmJkMzMyYjBjYmNiNzkuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6IDkwMCwiaGVpZ2h0IjowLCJmaXQiOiJjb3ZlciJ9fX0=">
-    <meta property="og:description" content="Empty page with all the meta tags complete">
-    <meta property="og:title" content="Document">
+    <meta name="description" content="Come to us for all your beaded jewelry needs!">
+    <title>Bree's Beads</title>
+    <meta property="og:image" content="https://parsnippity.github.io/breesbeads/images/tropicalbeads.jpg>
+    <meta property="og:description" content="Come to us for all your beaded jewelry needs!">
+    <meta property="og:title" content="Bree's Beads">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
+		<!--Logo and search bar-->
         <div id="logoSearch">
-            <a href="./index.html"><img id="logo" src="images/logo.png"></a>
+            <a href="./index.html"><img id="logo" src="images/logo.png" alt="Bree's Beads Logo"></a>
             <input id="forSearch" type="search" placeholder="Search">
         </div>
+		<!--Nav Bar-->
         <nav>
             <a href="./index.html">Home</a>
             <a href="./gallery.html">Gallery</a>
@@ -28,54 +30,57 @@
         </nav>
     </header>
     <article>
+		<!--Caption of the page-->
         <div class="top">
             <h1>Leave a Review:</h1>
         </div>
         <form>
-                <fieldset id="stuff">
-                    <legend for="stuff">Information for validating your review:</legend>
-                    <label for="nameReview">Name:</label>
-                    <input type="text" id="nameReview" required>
-                    <br>
-                    <label for="emailReview">Email:</label>
-                    <input type="email" id="emailReview">
-                    <br>
-                    <label for="phoneNumReview">Phone Number:</label>
-                    <input type="tel" id="phoneNumReview">
-                    <br>
-                    <label for="reviewOrderNumber">Order Number:</label>
-                    <input id="reviewOrderNumber" type="number" required>
-                </fieldset>
-                <fieldset>
-                    <legend>Product and Review:</legend>
-                    <label for="purchasedProduct">Product:</label>
-                    <select id="purchasedProduct">
-                        <option value="bb">Blue and Black Necklace</option>
-                        <option value="hb">Heart Bead Necklace</option>
-                        <option value="pb">Pearl and Beads Necklace</option>
-                        <option value="cn">Custom Necklace</option>
-                        <option value="fb">Flower Bead Bracelet</option>
-                        <option value="tropb">Tropical Bead Bracelet</option>
-                        <option value="tb">Turquoise Bead Bracelet</option>
-                        <option value="cb">Custom Bracelet</option>
-                    </select>
-                    <br>
-                    <label for="reviewSpace">Review:</label>
-                    <br>
-                    <textarea id="reviewSpace" rows="4" cols="35" required></textarea>
-                    <br>
-                    <button type="submit" formaction="./reviews.html">Submit</button>
-                </fieldset>
+		<!--A section for personal information-->
+            <fieldset id="stuff">
+                <legend for="stuff">Information for validating your review:</legend>
+                <label for="nameReview">Name:</label>
+                <input type="text" id="nameReview" required>
+                <br>
+                <label for="emailReview">Email:</label>
+                <input type="email" id="emailReview">
+                <br>
+                <label for="phoneNumReview">Phone Number:</label>
+                <input type="tel" id="phoneNumReview">
+                <br>
+                <label for="reviewOrderNumber">Order Number:</label>
+                <input id="reviewOrderNumber" type="number" required>
+            </fieldset>
+			<!--A section for indicating the product being reviewed, for typing the review, and for submitting it-->
+            <fieldset>
+                <legend>Product and Review:</legend>
+                <label for="purchasedProduct">Product:</label>
+                <select id="purchasedProduct">
+                    <option value="bb">Blue and Black Necklace</option>
+                    <option value="hb">Heart Bead Necklace</option>
+                    <option value="pb">Pearl and Beads Necklace</option>
+                    <option value="cn">Custom Necklace</option>
+                    <option value="fb">Flower Bead Bracelet</option>
+                    <option value="tropb">Tropical Bead Bracelet</option>
+                    <option value="tb">Turquoise Bead Bracelet</option>
+                    <option value="cb">Custom Bracelet</option>
+                </select>
+                <br>
+                <label for="reviewSpace">Review:</label>
+                <br>
+                <textarea id="reviewSpace" rows="4" cols="35" required></textarea>
+                <br>
+                <button type="submit" formaction="./reviews.html">Submit</button>
+            </fieldset>
         </form>
     </article>
     <footer>
-        <img id="footerLogo" src="images/smallerlogo.png">
+		<!--The Footer-->
+        <img id="footerLogo" src="images/smallerlogo.png" alt="Bree's Beads Logo">
         <p id="address">1018 W Beaded Ln<br>Glendale AZ 85310</p>
-        <p id="contact">Email: <a href="mailto:contactus@breesbeads.com">contactus@breesbeads.com</a><br>Phone Number: 123
-            456 7890</p>
+        <p id="contact">Email: <a href="mailto:contactus@breesbeads.com">contactus@breesbeads.com</a><br>Phone Number: 123 456 7890</p>
         <p id="date">Last Edited 10/18/2022</p>
-        <a href="https://www.twitter.com"><img id="twitter" src="./images/twitter.png"></a>
-        <a href="https://www.instagram.com"><img id="instagram" src="./images/instagram.png"></a>
+        <a href="https://www.twitter.com"><img id="twitter" src="./images/twitter.png" alt="Twitter Logo"></a>
+        <a href="https://www.instagram.com"><img id="instagram" src="./images/instagram.png" alt="Instagram Logo"></a>
     </footer>
     <script src="./index.js"></script>
 </body>
